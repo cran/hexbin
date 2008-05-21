@@ -193,7 +193,7 @@ hexlegendGrob(legend = 1.2,
 
 \value{
   \code{hexbinplot} produces an object of class \code{"trellis"}. The
-  code{update} method can be used to update components of the object and
+  \code{update} method can be used to update components of the object and
   the \code{print} method (usually called by default) will plot it on an
   appropriate plotting device.  \code{hexlegendGrob} produces a
   \code{"grob"} (grid object).

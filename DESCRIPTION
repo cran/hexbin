@@ -1,5 +1,5 @@
 Package: hexbin
-Version: 1.17.0
+Version: 1.18.0
 Date: 2008-05-21
 Title: Hexagonal Binning Routines
 Author: Dan Carr <dcarr@voxel.galaxy.gmu.edu>, ported by Nicholas
@@ -10,6 +10,12 @@ Suggests: marray, cluster, affy, Biobase
 Description: Binning and plotting functions for hexagonal bins. Now
         uses and relies on grid graphics and formal (S4) classes and
         methods.
-Collate: BTC.R BTY.R grid.hexagons.R grid.hexlegend.R hbox.R hdiffplot.R hexbinList.R hexbinplot.R hexbin.s4.R hexpanel.R hexplom.R hexPlotMA.R hexutil.R hexViewport.R HO.R LINGRAY.R LOCS.R MAG.R RB.R smoothHexbin.R
-License: GPL 2
-Packaged: Tue Dec  2 22:38:34 2008; nikko
+Collate: BTC.R BTY.R grid.hexagons.R grid.hexlegend.R hbox.R
+        hdiffplot.R hexbinList.R hexbinplot.R hexbin.s4.R hexpanel.R
+        hexplom.R hexPlotMA.R hexutil.R hexViewport.R HO.R LINGRAY.R
+        LOCS.R MAG.R RB.R smoothHexbin.R
+biocViews: Visualization
+License: GPL-2
+Packaged: 2009-04-21 09:02:53 UTC; biocbuild
+Repository: CRAN
+Date/Publication: 2009-05-10 18:54:18

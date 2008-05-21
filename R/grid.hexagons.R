@@ -1,4 +1,3 @@
-
 hexcoords <- function(dx, dy = NULL, n = 1, sep = NULL)
 {
     stopifnot(length(dx) == 1)
