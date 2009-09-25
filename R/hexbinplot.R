@@ -84,7 +84,7 @@ panel.hexbin <-
         tmp <- x
         x <- (y + x)/sqrt(2)
         y <- (y - tmp)/sqrt(2)
-    }   
+    }
     if (is.character(xbnds))
         xbnds <-
             switch(match.arg(xbnds),
@@ -105,7 +105,7 @@ panel.hexbin <-
                 xbnds = xbnds, ybnds = ybnds)
     if (.prelim)
         return(max(h@count))
-    
+
     ## have to do this because grid.hexagons croaks with unrecognized
     ## arguments:
     args <- list(dat = h, check.erosion = FALSE, ...)
@@ -126,14 +126,14 @@ panel.hexboxplot <-
              xbins = 30,
              xbnds = c("data", "panel"), # was: xbnds = c("panel", "data"),
              ybnds = c("data", "panel"), # was: ybnds = c("panel", "data"),
-             
+
              ## special args
              .prelim = FALSE,
              .cpl = current.panel.limits(),
              .xlim = .cpl$xlim,
              .ylim = .cpl$ylim,
              .aspect.ratio = 1,
-             
+
              type = character(0),
              cdfcut=.25,
              shadow=.05,
@@ -158,10 +158,10 @@ panel.hexboxplot <-
     h <-hexbin(x = x, y = y,
                 xbins = xbins, shape = shape,
                 xbnds = xbnds, ybnds = ybnds,IDs=TRUE)
-      
+
     if (.prelim)
         return(max(h@count))
-    
+
     ## have to do this because grid.hexagons croaks with unrecognized
     ## arguments:
     args <- list(dat = h, check.erosion = FALSE, ...)
@@ -177,13 +177,13 @@ panel.hexboxplot <-
       hexpolygon(h.xy$x,h.xy$y, hexC, density = density,
 	       fill = NA, border = gray(.75))
     }
-    eh <- erode(h,cdfcut=cdfcut) 
+    eh <- erode(h,cdfcut=cdfcut)
     h.xy <- hcell2xy(eh,check.erosion=TRUE)
     dx <- (0.5 * diff(eh@xbnds))/eh@xbins
     dy <- (0.5 * diff(eh@ybnds))/(eh@xbins * h@shape * sqrt(3))
     hexC <- hexcoords(dx, dy, sep = NULL)
     hexpolygon(h.xy$x,h.xy$y, hexC, density = density,
-	       fill = "green", border = gray(.75))  
+	       fill = "green", border = gray(.75))
     med <- which.max(eh@erode)
     xnew <- h.xy$x[med]
     ynew <- h.xy$y[med]
@@ -243,7 +243,7 @@ panel.hexpose <-
   if ('g' %in% type) panel.grid(h = -1, v = -1)
   eroded <- unlist(lapply(binL@hbins, is, "erodebin"))
   tmph.xy <- lapply(binL@hbins, hcell2xy, check.erosion = TRUE)
-  
+
   ##__________________ Construct hexagon___________________
   dx <- (0.5 * diff(binL@Xbnds))/xbins
   dy <- (0.5 * diff(binL@Ybnds))/(xbins * binL@Shape * sqrt(3))
@@ -353,7 +353,7 @@ panel.hexpose <-
   if(any(eroded)) {
     hmeds <- matrix(unlist(lapply(binL@hbins[eroded],
                                   function(x)unlist(getHMedian(x)))),
-                    nc = 2, byrow = TRUE)
+                    ncol = 2, byrow = TRUE)
     hexpolygon(x = hmeds[, 1], y = hmeds[, 2], hexC,
                border = hexpose.median.border,
                fill = hexpose.median.color)
@@ -416,7 +416,7 @@ hexbinplot.formula <-
     ## also need maxcnt, o.w. can't draw legend, panels not comparable
     ## either
     if (missing(maxcnt))
-        maxcnt <- 
+        maxcnt <-
             max(mapply(panel.hexbinplot, ## note: not 'panel'
                        x = lapply(ans$panel.args, "[[", "x"),
                        y = lapply(ans$panel.args, "[[", "y"),
@@ -501,7 +501,7 @@ old.hexbinplot.formula <-
     ## also need maxcnt, o.w. can't draw legend, panels not comparable
     ## either
     if (missing(maxcnt))
-        maxcnt <- 
+        maxcnt <-
             max(mapply(panel.hexbinplot, ## note: not 'panel'
                        x = lapply(ans$panel.args, "[[", "x"),
                        y = lapply(ans$panel.args, "[[", "y"),
@@ -569,7 +569,7 @@ hexlegendGrob <-
     }
 
     ## grob
-    ans <- 
+    ans <-
         switch(style,
                "colorscale" = {
 
@@ -587,13 +587,13 @@ hexlegendGrob <-
                    maxxy <- max(abs(unlist(hexxy)))
                    hexxy <- lapply(hexxy, function(x) 0.5 * x/ maxxy)
 
-                   pol <- 
+                   pol <-
                        polygonGrob(x = 0.5 + rep(hexxy$x, n-1),
                                    y = (rep(1:(n-1), each = 6) + hexxy$y) / n,
                                    id.lengths = rep(6, n-1),
                                    gp = gpar(fill = pen, col = border),
                                    default.units = "npc")
-                   txt <- 
+                   txt <-
                        textGrob(as.character(bnds),
                                 x = 0.5,
                                 y = (0:(n-1) + 0.5) / n,
@@ -638,14 +638,14 @@ hexlegendGrob <-
                    maxxy <- max(abs(unlist(hexxy)))
                    hexxy <- lapply(hexxy, function(x) 0.5 * x/ maxxy)
 
-                   pol <- 
+                   pol <-
                        polygonGrob(x = 0.5 + rep(radius, each = 6) * rep(hexxy$x, n),
                                    y = (rep(0.5 + 1:n, each = 6) +
                                         rep(radius, each = 6) * hexxy$y - 1) / n,
                                    id.lengths = rep(6, n),
                                    gp = gpar(fill = pen, col = border),
                                    default.units = "npc")
-                   txt <- 
+                   txt <-
                        textGrob(as.character(bnds),
                                 x = 0.5,
                                 y = (1:n - 0.5) / n,
@@ -736,7 +736,7 @@ hexlegendGrob <-
                                                  y = unit(rep.int(hexC$y, n) + rep.int(y, n6), "inches"),
                                                  id.lengths = n6,
                                                  gp =
-                                                 gpar(col = pen[i, 1], 
+                                                 gpar(col = pen[i, 1],
                                                       fill = if (border) 1 else pen[i, 1])),
                                      row = 1, col = 1)
 

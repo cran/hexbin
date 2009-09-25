@@ -12,14 +12,10 @@ panel.hexgrid(h, border = grey(0.85))
   \item{h}{an object of class \code{hexbin}.}
   \item{border}{a color for the hexagon border colors}
 }
-\details{
-}
 \value{
  There is no return value from this function. The results are plotted on
  the current active device.
 }
 \author{Nicholas Lewin-Koh \email{nikko@hailmail.net}}
 \seealso{\code{\link{hexbinplot}}, \code{\link{hexGraphPaper}}}
-\examples{
-}
 \keyword{hplot}

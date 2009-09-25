@@ -38,8 +38,8 @@ all.intersect <- function(binlist)
     ## Will have to rethink this if we move to non-aligned
     ## hexagon bins. NL
     if(inherits(binlist,"hexbinList")) binlist <- binlist@hbins
-    ans <- matrix(FALSE, nr = binlist[[1]]@dimen[1]*binlist[[1]]@dimen[2],
-                  nc = length(binlist))
+    ans <- matrix(FALSE, nrow = binlist[[1]]@dimen[1]*binlist[[1]]@dimen[2],
+                  ncol = length(binlist))
     for(i in 1:length(binlist)) {
         if(is(binlist[[i]], "erodebin"))
             ans[binlist[[i]]@cell[binlist[[i]]@eroded], i] <- TRUE
@@ -74,7 +74,7 @@ mixcolors2 <- function (colors, alpha, where="hsv")
     # The reurn value is a single hex color forming the mixture
     # This function is purely linear mixing, nolinear mixing
     # would be quite interesting since the colorspaces are not really
-    # linear, ie mixing alonga manifold in LUV space. 
+    # linear, ie mixing alonga manifold in LUV space.
     alpha <- as.numeric(alpha)
     na <- length(alpha)
     n1 <- nrow(colors)
@@ -209,18 +209,18 @@ hdiffplot <-
                 if(nbcol > 0)
                   matrix(c(seq(0, 360, length = nfcol+1)[1:nfcol]/360, rep(0, nbcol),
                            rep(1, nfcol), rep(0, nbcol),rep(1, nfcol), rep(.9, nbcol)),
-                         nc=3)
+                         ncol = 3)
                         ## V = c(rep(1, nfcol), seq(.9, .1, length=nbcol))
-             
+
                 else #matrix(c(seq(0, 360, length = nhb+1), s=1, v=1)[1:nfcol]
                   matrix(c(seq(0, 360, length = nhb+1)/360,
                             rep(1,nhb+1),
-                            rep(1,nhb+1)),nc=3)[1:nhb,]
+                            rep(1,nhb+1)), ncol = 3)[1:nhb,]
         }
         else {
             foc.col <- t(rgb2hsv(col2rgb(col.control$focus)))
             if(nbcol > 0) {
-                bcol <- matrix(c(rep(0, 2*nbcol), rep(.9, nbcol)), nc = 3)
+                bcol <- matrix(c(rep(0, 2*nbcol), rep(.9, nbcol)), ncol = 3)
                 rbind(foc.col, bcol)
             }
             else foc.col
@@ -302,7 +302,7 @@ hdiffplot <-
     if(any(eroded)) {
         hmeds <- matrix(unlist(lapply(bin1@hbins[eroded],
                                       function(x) unlist(getHMedian(x)))),
-                        nc = 2, byrow = TRUE)
+                        ncol = 2, byrow = TRUE)
         hexpolygon(x = hmeds[, 1], y = hmeds[, 2], hexC,
                    border = col.control$med.b, fill = col.control$medhex)
         if(arrows) {

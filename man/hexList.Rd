@@ -40,11 +40,7 @@ hexList(x, y = NULL, given = NULL, xbins = 30, shape = 1,
 }
 
 \author{Nicholas Lewin-Koh}
-% \note{ ~~further notes~~ }
 
 \seealso{\code{\link{hexbin}}, \code{\link{hdiffplot}} }
-\examples{
-
-}
 \keyword{dplot}
 \keyword{misc}

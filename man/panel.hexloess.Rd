@@ -2,7 +2,9 @@
 \alias{panel.hexloess}
 \title{Loess line for hexbin lattice plot}
 \description{
-A panel function to add a loess line to a hexbin lattice plot.
+  A panel function to add a loess line to a hexbin lattice plot.
+
+  This function contravened CRAN policy and is no longer available.
 }
 \usage{
 panel.hexloess(bin, w = NULL, span = 2/3, degree = 1,
@@ -25,8 +27,6 @@ panel.hexloess(bin, w = NULL, span = 2/3, degree = 1,
   \item{col.line}{line color graphical parameter.}
   \item{\dots}{optional arguments to \code{\link[stats]{loess.control}}.}
 }
-\details{ 
-}
 \value{
  There is no return value from this function. The results are plotted on
  the current active device.
@@ -34,10 +34,8 @@ panel.hexloess(bin, w = NULL, span = 2/3, degree = 1,
 \author{Nicholas Lewin-Koh \email{nikko@hailmail.net}}
 \seealso{
 \code{\link{hexbinplot}}, \code{\link{panel.hexgrid}},
-\code{\link[stats:scatter.smooth]{loess.smooth}},
-\code{\link[stats]{loess.control}}, 
+\code{\link{loess.smooth}},
+\code{\link{loess.control}}, 
 \code{\link[lattice:panel.functions]{panel.loess}}
-}
-\examples{
 }
 \keyword{hplot}

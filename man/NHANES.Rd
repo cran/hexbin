@@ -33,14 +33,6 @@
     \item{Sex}{a factor with levels \code{F} (female) and \code{M} (male).}
   }
 }
-% \details{
-% }
-\source{
- unknown%____ FIXME ____
-}
-\references{
-% ~~ possibly secondary sources and usages ~~
-}
 \examples{
 data(NHANES)
 summary(NHANES)

@@ -22,9 +22,6 @@ hexViewport(x, offset = unit(0,"inches"), mar = NULL,
   \item{clip}{simply passed to \code{\link[grid]{viewport}()}.}
   \item{vp.name}{name of viewport; defaults to random name.}
 }
-\details{
- %...
-}
 \value{
   an S4 object of class \code{"hexVP"}, see \link{hexVP-class} for more,
   with its main slot \code{hexVp} a \code{\link[grid]{viewport}} for

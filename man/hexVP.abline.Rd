@@ -40,8 +40,5 @@ hexVP.abline(hvp, a = NULL, b = NULL, h = numeric(0), v = numeric(0),
 \seealso{\code{\link{gplot.hexbin}}, \code{\link{hexViewport}},
   \code{\link{hexMA.loess}}
 }
-\examples{
-%% FIXME: add some
-}
 \keyword{aplot}
 

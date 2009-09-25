@@ -116,13 +116,13 @@ function(x, offset = unit(0,"inches"), mar = NULL,
         viewport(x = unit(margins[2], "lines"),
                  y = unit(margins[1], "lines"),
                  width = wd, height = ht, xscale = xs, yscale = ys,
-                 just = c("left", "bottom"), default.unit = "native",
+                 just = c("left", "bottom"), default.units = "native",
                  clip = "off", name = paste(vp.name,".off",sep=""))
     hvp@hexVp.on <-
         viewport(x = unit(margins[2], "lines"),
                  y = unit(margins[1], "lines"),
                  width = wd, height = ht, xscale = xs, yscale = ys,
-                 just = c("left", "bottom"), default.unit = "native",
+                 just = c("left", "bottom"), default.units = "native",
                  clip = "on", name = paste(vp.name,".on",sep=""))
     hvp@mar <- unit(mar,"lines")
     hvp@fig <- convertUnit(unit(fig,"inches"),"npc")
