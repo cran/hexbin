@@ -1,3 +1,14 @@
+2009-08-09  Nicholas Lewin-Koh <nikko@hailmail.net>
+	* R/grid.hexagons.R removed break statements, switch fails. Cow
+	lattice and centroid can ramp colors. Bug submitted by Ricardo
+	DeLemos" <lemos@soe.ucsc.edu>
+	* man/hexVP-class.Rd Shape slot was not documented
+	
+2009-02-26  Nicholas Lewin-Koh <nikko@hailmail.net>
+	* R/grid.hexagons.R fixed bad if construct
+	* R/hexbin.s4.R changed xlab and ylab signatures in class hexbin
+	from character to vector, patch submitted by Don Armstrong <don@donarmstrong.com>
+
 2008-04-28  Martin Maechler  <maechler@stat.math.ethz.ch>
 
 	* DESCRIPTION (Version): 1.13.4

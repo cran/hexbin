@@ -38,7 +38,7 @@ panel.hexboxplot(x, y, xbins = 30,
 }
 \author{Nicholas Lewin-Koh \email{nikko@hailmail.net}}
 \seealso{\code{\link{hexbinplot}}, \code{\link{panel.hexgrid}},
-  \code{\link[lattice]{panel.boxplot}}
+  \code{\link[lattice]{panel.bwplot}}
 }
 \examples{
 mixdata <-

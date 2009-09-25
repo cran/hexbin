@@ -13,6 +13,11 @@ hexbin <-
     ch0 <- function(u) if(is.null(u)) "" else u
     xlab <- if (is.null(xlab)) ch0(xy$xlab) else xlab
     ylab <- if (is.null(ylab)) ch0(xy$ylab) else ylab
+    if(! (is.character(xlab) || is.expression(xlab)))
+        stop("xlab must be a character or expression")
+    if(! (is.character(ylab) || is.expression(ylab)))
+        stop("ylab must be a character or expression")
+
     x <- xy$x
     y <- xy$y
     n <- length(x)
@@ -91,7 +96,8 @@ setClass("hexbin",
 			shape = "numeric", xbnds = "numeric",
 			ybnds = "numeric", dimen = "numeric",
 			n = "integer", ncells = "integer", call = "call",
-			xlab = "character", ylab = "character",
+                        xlab = "vector", ylab = "vector",
+			#xlab = "character", ylab = "character",
 			cID = "integer or NULL", cAtt = "vector")## "or NULL"
 	 )
 

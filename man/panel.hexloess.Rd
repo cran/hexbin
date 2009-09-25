@@ -5,8 +5,11 @@
 A panel function to add a loess line to a hexbin lattice plot.
 }
 \usage{
-panel.hexloess(bin, w = NULL, span = 2/3, degree = 1, family = c("symmetric", "gaussian"), evaluation = 50,
-               lwd = add.line$lwd, lty = add.line$lty, col, col.line = add.line$col, \dots)
+panel.hexloess(bin, w = NULL, span = 2/3, degree = 1,
+               family = c("symmetric", "gaussian"), evaluation = 50, 
+               lwd = add.line$lwd, lty = add.line$lty,
+               col, col.line = add.line$col, \dots)
+
 }
 \arguments{
   \item{bin}{an object of class \code{hexbin}.}
@@ -31,8 +34,9 @@ panel.hexloess(bin, w = NULL, span = 2/3, degree = 1, family = c("symmetric", "g
 \author{Nicholas Lewin-Koh \email{nikko@hailmail.net}}
 \seealso{
 \code{\link{hexbinplot}}, \code{\link{panel.hexgrid}},
-\code{\link[stats]{loess.smooth}}, \code{\link[stats]{loess.control}},
-\code{\link[lattice]{panel.loess}}
+\code{\link[stats:scatter.smooth]{loess.smooth}},
+\code{\link[stats]{loess.control}}, 
+\code{\link[lattice:panel.functions]{panel.loess}}
 }
 \examples{
 }

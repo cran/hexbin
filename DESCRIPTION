@@ -1,6 +1,6 @@
 Package: hexbin
-Version: 1.18.0
-Date: 2008-05-21
+Version: 1.20.0
+Date: 2009-09-25
 Title: Hexagonal Binning Routines
 Author: Dan Carr <dcarr@voxel.galaxy.gmu.edu>, ported by Nicholas
         Lewin-Koh and Martin Maechler <maechler@stat.math.ethz.ch>
@@ -14,8 +14,7 @@ Collate: BTC.R BTY.R grid.hexagons.R grid.hexlegend.R hbox.R
         hdiffplot.R hexbinList.R hexbinplot.R hexbin.s4.R hexpanel.R
         hexplom.R hexPlotMA.R hexutil.R hexViewport.R HO.R LINGRAY.R
         LOCS.R MAG.R RB.R smoothHexbin.R
-biocViews: Visualization
 License: GPL-2
-Packaged: 2009-04-21 09:02:53 UTC; biocbuild
+Packaged: 2009-11-12 08:51:00 UTC; biocbuild
 Repository: CRAN
-Date/Publication: 2009-05-10 18:54:18
+Date/Publication: 2009-11-13 10:43:15

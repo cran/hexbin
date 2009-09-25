@@ -30,17 +30,21 @@
   \describe{
     \item{\code{hexVp.off}:}{Object of class \code{"viewport"} with
       clipping set to off, see \code{\link[grid]{viewport}}.}
-    \item{\code{hexVp.off}:}{Object of class \code{"viewport"}, with the same
+    \item{\code{hexVp.on}:}{Object of class \code{"viewport"}, with the same
       dimensions and parameters as hexVp.off, but with
-      clipping set to on, see \code{\link[grid]{viewport}}.}    
+      clipping set to on, see \code{\link[grid]{viewport}}.}
+    \item{\code{hp.name}:}{The name of the viewport for searching a vptree}.
     \item{\code{mar}:}{\code{\link[grid]{unit}} vector of four margins
       (typically in \code{"lines"}).}
-    \item{\code{fig}:}{\code{\link[unit]{unit}} vector of two figure sizes
+    \item{\code{fig}:}{\code{\link[grid]{unit}} vector of two figure sizes
       (typically in \code{"npc"}).}
     \item{\code{plt}:}{\code{\link[grid]{unit}} vector of two figure sizes
       (typically in \code{"npc"}).}
     %% MM {FIXME?}: Is n't this simply ``xlim'' - then call it so!
-    %% NL, yes it is, but xscale and yscale is the parameters used by grid.
+    %% NL, yes it is, but xscale and yscale is the parameters used by
+    %% grid.
+    \item{\code{shape}:}{The shape parameter from the plotted
+      \code{\link[hexbin]{hexbin}} object.}
     \item{\code{xscale}:}{numeric of length two specifying x-range.}
     \item{\code{yscale}:}{numeric of length two specifying y-range.}
   }

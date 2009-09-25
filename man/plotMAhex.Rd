@@ -117,7 +117,7 @@ plotMAhex(MA, array = 1, xlab = "A", ylab = "M",
 
 \author{Nicholas Lewin-Koh, adapted from code by Gordon Smyth}
 
-\seealso{\code{\link[limma]{plotMA}} from package \pkg{limma},
+\seealso{\code{\link[limma:plotma]{plotMA}} from package \pkg{limma},
   and \code{\link{gplot.hexbin}}.
 }
 

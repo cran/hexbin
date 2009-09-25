@@ -27,7 +27,7 @@ hexList(x, y = NULL, given = NULL, xbins = 30, shape = 1,
   \item{ylab}{ ~~Describe \code{ylab} here~~ }
 }
 \details{
-  There is also a \code{\link[methods]{coerce}} method to produce
+  There is also a \code{\link[methods:as]{coerce}} method to produce
   \code{hexbinList} objects from \code{\link{list}}s.
   %% i.e., \code{as(list(....), "hexbinList")} should work
 }

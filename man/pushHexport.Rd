@@ -3,7 +3,8 @@
 \title{Push a Hexagon Viewport ("hexVP")}
 \description{
   Push a Hexagon Viewport (\code{"hexVP"}, see \link{hexVP-class}) on to
-  the tree of (grid) viewports, calling \code{\link[grid]{pushViewport}}.
+  the tree of (grid) viewports, calling
+  \code{\link[grid:viewports]{pushViewport}}. 
 }
 \usage{
 pushHexport(hvp, clip = "off")
@@ -15,7 +16,7 @@ pushHexport(hvp, clip = "off")
   \item{clip}{which viewport to push, either 'on' or 'off' are the
     allowed arguments, see details.}
 }
-\seealso{the underlying \code{\link[grid]{pushViewport}} from the
+\seealso{the underlying \code{\link[grid:viewports]{pushViewport}} from the
   \pkg{grid} package.
 }
 \details{

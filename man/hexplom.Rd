@@ -11,7 +11,8 @@ hexplom(x, data, \dots)
 
 \method{hexplom}{formula}(x, data = NULL, \dots)
 
-\method{hexplom}{data.frame}(x, data = NULL, \dots, groups = NULL, subset = TRUE)
+\method{hexplom}{data.frame}(x, data = NULL, \dots, groups = NULL,
+   subset = TRUE) 
 
 \method{hexplom}{matrix}(x, data = NULL, \dots, groups = NULL, subset = TRUE)
 
@@ -68,7 +69,7 @@ panel.hexplom(\dots)
 
 \seealso{
   \code{\link[lattice]{splom}}, \code{\link[lattice]{xyplot}},
-  \code{\link[lattice]{hexbinplot}},
+  \code{\link[hexbin]{hexbinplot}},
   \code{\link[lattice]{Lattice}}, \code{\link[lattice]{panel.pairs}}
 }
 

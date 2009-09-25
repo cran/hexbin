@@ -1,3 +1,4 @@
+
 hexcoords <- function(dx, dy = NULL, n = 1, sep = NULL)
 {
     stopifnot(length(dx) == 1)
@@ -209,10 +210,12 @@ function(dat, style = c("colorscale", "centroids", "lattice",
 	   "centroids" = ,
        "constant.col" = ,
 	   "lattice" = {
-               if(is.null(pen)) pen <- rep.int(1, length(cnt))
-               else if(length(pen)== length(cnt)) break
-               else if(length(pen)== 1) pen <- rep.int(pen,length(cnt))
-               else stop("'pen' has wrong length")
+               if(length(pen)!= length(cnt)){
+                   if(is.null(pen)) pen <- rep.int(1, length(cnt))
+               ##else if(length(pen)== length(cnt)) break
+                   else if(length(pen)== 1) pen <- rep.int(pen,length(cnt))
+                   else stop("'pen' has wrong length")
+               }
            },
 	   "nested.lattice" = ,
 	   "nested.centroids" = {
@@ -227,7 +230,7 @@ function(dat, style = c("colorscale", "centroids", "lattice",
 		       ind[ind == 0] <- 1
 		       pen <- pen[ind,]
 		   }
-		   else break
+		   ##else break
 	       }
 	       else {
 		   pen <- floor(log10(cnt)) + 2

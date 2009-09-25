@@ -27,12 +27,13 @@ hexViewport(x, offset = unit(0,"inches"), mar = NULL,
 }
 \value{
   an S4 object of class \code{"hexVP"}, see \link{hexVP-class} for more,
-  with its main slot \code{hexVp} a \code{\link[grid]{viewport}} for grid graphics.
+  with its main slot \code{hexVp} a \code{\link[grid]{viewport}} for
+  grid graphics. 
 }
 
 \seealso{\code{\link[grid]{viewport}} and the main
   \emph{\dQuote{handlers}} \code{\link{pushHexport}} and
-  \code{\link[grid]{popViewport}}; further
+  \code{\link[grid:viewports]{popViewport}}; further
   \code{\link{gplot.hexbin}} and \code{\link{hboxplot}} which build on
   \code{hexViewport}.
 }

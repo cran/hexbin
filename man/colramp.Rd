@@ -45,7 +45,9 @@ plinrain(n, beg=1, end=256)
   \url{http://www.cs.uml.edu/~haim/ColorCenter/}
 }
 \seealso{
-  \code{\link[grDevices]{rainbow}}, \code{\link[grDevices]{terrain.colors}}, \code{\link[grDevices]{rgb}},
+  \code{\link[grDevices:palettes]{rainbow}},
+  \code{\link[grDevices:palettes]{terrain.colors}},
+  \code{\link[grDevices]{rgb}},  
   \code{\link[grDevices]{hsv}}
 }
 \examples{
