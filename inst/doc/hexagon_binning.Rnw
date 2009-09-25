@@ -2,7 +2,7 @@
 %% NOTE -- ONLY EDIT THE .Rnw FILE !
 
 %\VignetteIndexEntry{Hexagon Binning}
-%\VignetteDepends{hexbin, grid, cluster, marray}
+%\VignetteDepends{hexbin, grid, marray}
 %\VignetteKeywords{Over plotting, Large data set, Visualization}
 %\VignettePackage{hexbin}
 
@@ -35,21 +35,21 @@ stored in a data structure
 varying the radius of the hexagon in proportion to the counts.
 \end{enumerate}
 
-The underlying algorithm is extremely fast and effective for displaying the
-structure of datasets with $n \ge 10^6$.
+The underlying algorithm is extremely fast and effective for displaying
+the structure of datasets with $n \ge 10^6$.
 If the size of the grid and the cuts in the color ramp are chosen in a
 clever fashion than the structure inherent in the data should emerge
 in the binned plots. The same caveats apply to hexagon binning as
 apply to histograms and care should be exercised in choosing the
 binning parameters.
 
-The hexbin package is a set of function for creating, manipulating and plotting
-hexagon bins. The package extends the basic hexagon binning ideas with
-several functions for doing bivariate smoothing, finding an
+The hexbin package is a set of function for creating, manipulating and
+plotting hexagon bins. The package extends the basic hexagon binning
+ideas with several functions for doing bivariate smoothing, finding an
 approximate bivariate median, and looking at the difference between
 two sets of bins on the same scale. The basic functions can be
 incorporated into many types of plots. This package is based on the
-original package for splus by Dan Carr at George Mason University and
+original package for S-PLUS by Dan Carr at George Mason University and
 is mostly the fruit of his graphical genius and intuition.
 
 \section{Theory and Algorithm}
@@ -112,7 +112,7 @@ popViewport()
 
 We can see in Figure~\ref{fig:compHexSq} that when the data are plotted 
 as squares centered on a regular lattice our eye is drawn to the regular lines
-which are parrallel to the underlying grid. Hexagons tend to break up
+which are parallel to the underlying grid. Hexagons tend to break up
 the lines.
 
 How does does the hexagon binning algorithm work?
@@ -176,7 +176,7 @@ arrows(-.25, .15, 0, 0, angle = 10, length = .05)
 Figure~\ref{fig:binalg} shows graphically how the algorithm works. In
 the first panel we see the the dual lattice laid out in black and blue
 points. The red point is an arbitrary point to be binned. The second
-panel shows the near neigbor rectangles for each lattcie around the
+panel shows the near neigbor rectangles for each lattice around the
 point to be binned, the intersection of the rectangles contains the
 point. The last panel shows the simple test for locating the point in
 the hexagon, the closest of the two corners which are not
@@ -251,13 +251,13 @@ specified hexagon legends.
 So far we have looked at the basic hexagon plot. The hexbin package
 supplies several extensions to the basic hexbin, and the associated
 hexplot. The extensions discussed in this section will be smoothing
-hexbin objects using the hsmooth function, apporximating a bivariate
+hexbin objects using the hsmooth function, approximating a bivariate
 median with hexagons and a version of a bivariate boxplot, and using
 eroded hexbin objects to look at the overlap of two bivariate populations.
 
 \subsection{Smoothing with \texttt{hsmooth}}
 At this point the hexbin package only provides a single option for
-smoothig using a discrete kernel. Several improvements are in
+smoothing using a discrete kernel. Several improvements are in
 development including an apply function over neighborhoods and spline
 functions using a hexagonal basis or tensor products. The apply
 function should facilitate constructing more sophisticated kernel
@@ -321,7 +321,7 @@ the total counts. Mark all the cells if cdfcut is zero.
 The algorithm then performs gray-level erosion on the
 marked cells.  Each erosion cycle removes counts from cells.  The
 counts removed from each cell are a multiple of the cell's exposed-face
-count.  The algorithm choses the multiple so at least one cell will be
+count.  The algorithm chooses the multiple so at least one cell will be
 empty or have a count deficit on each erosion cycle.  The erode vector
 contains an erosion number for each cell. The value of  erode is
 
@@ -338,7 +338,7 @@ to create a version of a bivariate box plot built on hexagons. The
 following example comes from a portion of the ''National Health and Nutrition
 Examination Survey'' included in \texttt{hexbin} as the sample data
 set NHANES. The data consist of 9575 persons and mesures various
-clincal factors. Here in Figure~\ref{hbox} we show the levels of
+clinical factors. Here in Figure~\ref{hbox} we show the levels of
 transferin, a measure of iron binding against hemoglobin for all
 
 \begin{figure}[H]
@@ -371,7 +371,7 @@ be done for any hexbin plot, using the command
 \subsection{Comparing Distributions and the \texttt{hdiffplot}}
 With univariate data, if there are multiple groups, one often uses a
 density estimate to overlay densities, and compare two or more
-distirbutions. The hdiffplot is the bivariate analog. The idea behind
+distributions. The hdiffplot is the bivariate analog. The idea behind
 the hdiff plot is to plot one or more bin objects representing
 multiple groups to compare the distributions. The following example
 uses the National Health data supplied in the hexbin package,
@@ -410,13 +410,13 @@ has a pair of arguments, \texttt{use.count} and \texttt{cell.at}. If
 \texttt{use.count = FALSE} and \texttt{cell.at} is a numeric vector of
 the same length as \texttt{hexbin@count} then the attribute vector
 will be used instead of the counts. \texttt{hexTapply} will
-sumarrerize values for each hexagon according to the supplied function
+summarize values for each hexagon according to the supplied function
 and return the table in the right order to use as an attribute
 vector. Another alternative is to set the \texttt{cAtt} slot of the
-hexbin obeject and grid.hexagons will automatically plot the attribute
+hexbin object and grid.hexagons will automatically plot the attribute
 if \texttt{use.count = FALSE} and \texttt{cell.at = NULL}. 
 
-Here is an example using spatial data. Often in cartographers use
+Here is an example using spatial data. Often cartographers use
 graduated symbols to display varying numerical quantities across a region.
 
 

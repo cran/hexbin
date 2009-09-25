@@ -1,9 +1,16 @@
 useDynLib(hexbin)
 
+
+import(methods)
 import(grid)    ## too many things from grid
 import(lattice) ## too many things from lattice
-importFrom("graphics", plot)
-#importFrom(colorspace, "HSV", "LUV", "coords", "hex")
+importFrom(graphics, plot, polygon)
+importFrom(grDevices, col2rgb, gray, grey, hsv, rgb, rgb2hsv,
+           xy.coords)
+importFrom(stats, coef, density, IQR, loess, loess.control, median,
+           predict, update)
+importFrom(utils, modifyList, str)
+
 
 ## Generics and functions defined in this package
 export(
