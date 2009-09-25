@@ -16,15 +16,15 @@ hexList(x, y = NULL, given = NULL, xbins = 30, shape = 1,
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{ ~~Describe \code{x} here~~ }
-  \item{y}{ ~~Describe \code{y} here~~ }
-  \item{given}{ ~~Describe \code{given} here~~ }
-  \item{xbins}{ ~~Describe \code{xbins} here~~ }
-  \item{shape}{ ~~Describe \code{shape} here~~ }
-  \item{xbnds}{ ~~Describe \code{xbnds} here~~ }
-  \item{ybnds}{ ~~Describe \code{ybnds} here~~ }
-  \item{xlab}{ ~~Describe \code{xlab} here~~ }
-  \item{ylab}{ ~~Describe \code{ylab} here~~ }
+  \item{x}{ x coordinate to be binned }
+  \item{y}{ y coordinate to be binned }
+  \item{given}{ ..}
+  \item{xbins}{ number of bins partitioning the range of xbnds}
+  \item{shape}{ the \emph{shape} = yheight/xwidth of the plotting regions }
+  \item{xbnds}{ horizontal limits of binning }
+  \item{ybnds}{ vertical limits of binning }
+  \item{xlab}{ character strings used as labels for \code{x} }
+  \item{ylab}{ character strings used as labels for \code{y}}
 }
 \details{
   There is also a \code{\link[methods:as]{coerce}} method to produce

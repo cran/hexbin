@@ -42,7 +42,7 @@ plotMAhex(MA, array = 1, xlab = "A", ylab = "M",
   \item{cex}{numeric vector of plot symbol expansions, of the the same
     length as \code{values}.  Defaults to 0.2 for the most common status
     value and 1 for the others. Ignored if there is no \code{status} vector.}
-  \item{nbin}{ ~~Describe \code{nbin} here~~ }  %% << FIXME
+  \item{nbin}{ Number of bins }  %% << FIXME
   \item{zero.weights}{logical, should spots with zero or negative
     weights be plotted?}
   \item{style}{string specifying the style of hexagon plot,
