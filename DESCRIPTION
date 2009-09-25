@@ -1,12 +1,12 @@
 Package: hexbin
-Version: 1.26.2
+Version: 1.26.3
 Date: 2009-09-25
 Title: Hexagonal Binning Routines
 Author: Dan Carr <dcarr@voxel.galaxy.gmu.edu>, ported by Nicholas
         Lewin-Koh and Martin Maechler <maechler@stat.math.ethz.ch>
 Maintainer: ORPHANED
 Depends: R (>= 2.0.1), methods, grid, lattice
-Imports: methods, grid, lattice, graphics, grDevices, stats, utils
+Imports: graphics, grDevices, stats, utils
 Suggests: marray, affy, Biobase
 Description: Binning and plotting functions for hexagonal bins. Now
         uses and relies on grid graphics and formal (S4) classes and
@@ -16,11 +16,11 @@ Collate: BTC.R BTY.R grid.hexagons.R grid.hexlegend.R hbox.R
         hexplom.R hexPlotMA.R hexutil.R hexViewport.R HO.R LINGRAY.R
         LOCS.R MAG.R RB.R smoothHexbin.R
 License: GPL-2
-Packaged: 2013-04-18 05:54:24 UTC; ripley
+Packaged: 2013-12-10 08:54:07 UTC; ripley
 X-CRAN-Original-Maintainer: Nicholas Lewin-Koh <nikko@hailmail.net>
 X-CRAN-Comment: Orphaned on 2013-01-30 as the maintainer failed to
         respond.  panel.hexloess contravened CRAN policy and has been
         disabled.
 Repository: CRAN
-Date/Publication: 2013-04-18 07:55:50
+Date/Publication: 2013-12-10 10:08:29
 NeedsCompilation: yes

@@ -302,7 +302,7 @@ old.hexplom.formula <-
 
 
     more.comp <- c(lattice:::limits.and.aspect(
-                                     lattice:::prepanel.default.splom,
+                                     lattice::prepanel.default.splom,
                                      prepanel = prepanel, 
                                      have.xlim = have.xlim, xlim = xlim, 
                                      have.ylim = have.ylim, ylim = ylim, 

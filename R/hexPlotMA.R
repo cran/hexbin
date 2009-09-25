@@ -162,9 +162,9 @@ plotMAhex <- function (MA, array = 1, xlab = "A", ylab = "M",
     }
     popViewport()
 	if (legend > 0) {
-        inner <- hexbin:::getPlt(hp$plot.vp, ret.unit="inches", numeric=TRUE)[1]
+        inner <- getPlt(hp$plot.vp, ret.unit="inches", numeric=TRUE)[1]
         inner <- inner/hbin@xbins
-        ysize <- hexbin:::getPlt(hp$plot.vp, ret.unit="inches", numeric=TRUE)[2]
+        ysize <- getPlt(hp$plot.vp, ret.unit="inches", numeric=TRUE)[2]
         pushViewport(hp$legend.vp)
         grid.hexlegend(legend, ysize=ysize, lcex = lcex, inner = inner,
                        style= style, minarea= minarea, maxarea= maxarea,
