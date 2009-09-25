@@ -1,5 +1,5 @@
 Package: hexbin
-Version: 1.26.1
+Version: 1.26.2
 Date: 2009-09-25
 Title: Hexagonal Binning Routines
 Author: Dan Carr <dcarr@voxel.galaxy.gmu.edu>, ported by Nicholas
@@ -16,10 +16,11 @@ Collate: BTC.R BTY.R grid.hexagons.R grid.hexlegend.R hbox.R
         hexplom.R hexPlotMA.R hexutil.R hexViewport.R HO.R LINGRAY.R
         LOCS.R MAG.R RB.R smoothHexbin.R
 License: GPL-2
-Packaged: 2013-01-30 04:53:05 UTC; ripley
+Packaged: 2013-04-18 05:54:24 UTC; ripley
 X-CRAN-Original-Maintainer: Nicholas Lewin-Koh <nikko@hailmail.net>
 X-CRAN-Comment: Orphaned on 2013-01-30 as the maintainer failed to
         respond.  panel.hexloess contravened CRAN policy and has been
         disabled.
 Repository: CRAN
-Date/Publication: 2013-01-30 06:30:29
+Date/Publication: 2013-04-18 07:55:50
+NeedsCompilation: yes

@@ -1,5 +1,5 @@
 b8c6e7f6b0230cdf61f0976d387c7a44 *ChangeLog
-616936568537b0fba6b144614d525407 *DESCRIPTION
+65a2aaa1139e1141f4db775e88808f6a *DESCRIPTION
 9129a733a21f780d50b1c3bb85da0047 *NAMESPACE
 98a77d0235bb074f09aa7675358b8650 *R/BTC.R
 b8083617bec9ef2a20bf2fb31d1f50cb *R/BTY.R
@@ -61,10 +61,10 @@ fc017f52b40dc804a41ea45305c840d8 *man/pushHexport.Rd
 febf2f7e1ad56316da2058e260732d7a *man/smooth.hexbin.Rd
 886e2efe62994815b8acfcc78c7ad81b *src/hbin.f
 470ef863da306fb9d0955b3cdb0b2ce0 *src/hcell.f
-e40957919802c48e51e882243f23dc44 *src/herode.f
+f8fb4b9ec5a1dbc174102d40377ce885 *src/herode.f
 719cbe239d3f98da12bd7f489ab6c197 *src/hsm.f
 ddcf0653ed6863dd0260e1f58349356a *tests/hdiffplot.R
-a9f7531176dc4680ecdf0b4a74cf3df3 *tests/hdiffplot.Rout.save
+66fb0e8391d2b94fbdb2633ac4d70e21 *tests/hdiffplot.Rout.save
 efe67770786c28cc2bfceef357376f7a *tests/hray.R
 6dca74e0501c54cede56d657a1c0c632 *tests/large.R
 67deed547c53c6a34dce80329c34c3ed *tests/viewp-ex.R

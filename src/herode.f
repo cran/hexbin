@@ -33,11 +33,11 @@ C
 C	
 	implicit none
 
-	integer cell(1), cnt(1) ! cell id and count
+	integer cell(*), cnt(*) ! cell id and count
 	integer n, bdim(2)	! number of cells and 2-D array bounds
-	integer erode(1)	! erosion status
-	integer	ncell(1),ncnt(1)  ! extracted id's and expanded counts
-	integer sides(1)	! number of exposed sides
+	integer erode(*)	! erosion status
+	integer	ncell(*),ncnt(*)  ! extracted id's and expanded counts
+	integer sides(*)	! number of exposed sides
 	integer neib(6,*)	! pointers to the neighbors
 	logical exist(0:*)	! cell existence
 
