@@ -52,18 +52,19 @@ all.intersect <- function(binlist)
 ## }
 
 ## MM: FIXME :  `` get(where) '' is a kludge!
-mixcolors <- function (alpha, color1, where = class(color1))
-{
-    alpha <- as.numeric(alpha)
-    c1 <- coords(as(color1, where))
-    na <- length(alpha)
-    n1 <- nrow(c1)
-    if(na == 1)
-        alpha <- rep(alpha, n1)
-    stopifnot(sum(alpha) == 1)
-    get(where)(t(apply(c1, 2, function(cols, alpha) alpha%*%cols, alpha)))
-
-}
+# EJP: outcomment, seems obsolete?
+#mixcolors <- function (alpha, color1, where = class(color1))
+#{
+#    alpha <- as.numeric(alpha)
+#    c1 <- coords(as(color1, where))
+#    na <- length(alpha)
+#    n1 <- nrow(c1)
+#    if(na == 1)
+#        alpha <- rep(alpha, n1)
+#    stopifnot(sum(alpha) == 1)
+#    get(where)(t(apply(c1, 2, function(cols, alpha) alpha%*%cols, alpha)))
+#
+#}
 
 mixcolors2 <- function (colors, alpha, where="hsv")
 {

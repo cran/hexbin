@@ -64,6 +64,7 @@ hexpolygon(x,y, dx = 0.1, density = 25, col = 2, lwd = 1.5)
 
 addBit <- function(bnds, f = 0.05) bnds + c(-f, f) * diff(bnds)
 sc <- addBit(rxy <- range(x,y))# same extents (cheating asp=1)
+library("grid")
 grid.newpage()
 pushViewport(plotViewport(.1+c(4,4,2,1), xscale = sc, yscale = sc))
 grid.rect()

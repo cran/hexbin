@@ -100,6 +100,7 @@ gplot.hexbin(x, style = "colorscale", legend = 1.2, lcex = 1,
   \code{\link{hdiffplot}}.  %%, \code{\link{hmatplot}}.
 }
 \examples{
+library("grid")
 ## 1) simple binning of spherical normal:
 x <- rnorm(10000)
 y <- rnorm(10000)

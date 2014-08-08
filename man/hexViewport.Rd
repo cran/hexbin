@@ -45,6 +45,7 @@ P <- plot(bin)
 xy <- hcell2xy(bin)
 pushHexport(P$plot.vp)
 i <- bin@count <= 3
+library("grid")
 grid.text(as.character(bin@count[i]), xy$x[i], xy$y[i],
           default.units = "native")
 grid.points(x[1:20],y[1:20]) # to show some points rather than counts

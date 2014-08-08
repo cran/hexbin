@@ -68,6 +68,7 @@
   \code{\link{gplot.hexbin}}.
 }
 \examples{
+ library("grid")
  example(hexViewport, echo=FALSE)
  ## continued:
  str(P$plot.vp)

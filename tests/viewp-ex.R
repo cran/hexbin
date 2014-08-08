@@ -9,6 +9,7 @@ hbin <- hexbin(x,y)
 ##
 hp <- hexViewport(hbin, newpage = TRUE)
 pushHexport(hp)
+library("grid")
 grid.rect()
 grid.xaxis()
 grid.yaxis()

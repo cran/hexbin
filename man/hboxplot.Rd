@@ -91,6 +91,7 @@ hboxplot(erodebin, density = c(32,7), border = c(2,4))
 hp <- hboxplot(erodebin, density = c(-1,17),
                main = "hboxplot(erode*(smooth*(.)))")
 pushHexport(hp)
+library("grid")
 grid.points(x[1:10], y[1:10])# just non-sense to show the principle
 popViewport()
 }

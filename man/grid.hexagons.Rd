@@ -141,6 +141,7 @@ grid.hexagons(dat, style = c("colorscale", "centroids", "lattice",
 }
 
 \examples{
+library("grid")
 set.seed(506)
 x <- rnorm(10000)
 y <- rnorm(10000)

@@ -165,7 +165,8 @@ old.hexplom.formula <-
     ## create a skeleton trellis object with the
     ## less complicated components:
 
-    foo <- do.call(lattice:::trellis.skeleton,
+    #foo <- do.call(lattice:::trellis.skeleton,
+    foo <- do.call(trellis.skeleton,
                    c(list(cond = cond,
                           aspect = aspect,
                           between = between,
@@ -197,7 +198,8 @@ old.hexplom.formula <-
 
     scales <- updateList(default.scales, scales)
     foo <- c(foo,
-             do.call(lattice:::construct.scales, scales))
+             #do.call(lattice:::construct.scales, scales))
+             do.call(construct.scales, scales))
 
 
     ## Step 3: Decide if limits were specified in call:
@@ -296,12 +298,13 @@ old.hexplom.formula <-
             list(subscripts = subscr[id])
 
         cond.current.level <-
-            lattice:::cupdate(cond.current.level,
-                    cond.max.level)
+            #lattice:::cupdate(cond.current.level, cond.max.level)
+            cupdate(cond.current.level, cond.max.level)
     }
 
 
-    more.comp <- c(lattice:::limits.and.aspect(
+    #more.comp <- c(lattice:::limits.and.aspect(
+    more.comp <- c(limits.and.aspect(
                                      lattice::prepanel.default.splom,
                                      prepanel = prepanel, 
                                      have.xlim = have.xlim, xlim = xlim, 
@@ -314,7 +317,8 @@ old.hexplom.formula <-
                                      nplots = nplots,
                                      x.axs = foo$x.scales$axs,
                                      y.axs = foo$y.scales$axs),
-                  lattice::: cond.orders(foo))
+                  #lattice::: cond.orders(foo))
+                  cond.orders(foo))
     foo[names(more.comp)] <- more.comp
 
 

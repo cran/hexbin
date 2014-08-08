@@ -68,7 +68,8 @@ this effectively.
 \begin{figure}[H]
   \centering
 <<comphexsq, fig=TRUE, width=7, height=4, echo=FALSE>>=
-library("hexbin")#,lib.loc="/home/nikko/R-devel/hex.devel/tst")
+library("grid")
+library("hexbin")
 x <- rnorm(1000)
 y <- rnorm(1000)
 ##-- Hexagon Bins: --

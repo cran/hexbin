@@ -57,6 +57,7 @@ erode.hexbin(hbin, cdfcut = 0.5)
 }
 
 \examples{
+library("grid")
 set.seed(153)
 x <- rnorm(10000)
 y <- rnorm(10000)
