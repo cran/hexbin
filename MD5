@@ -1,5 +1,5 @@
 b8c6e7f6b0230cdf61f0976d387c7a44 *ChangeLog
-6d1dfaaa403ed3de37aecb67a048b7a2 *DESCRIPTION
+8fc9eaa3bc6bdaeee7a251d78fb4d866 *DESCRIPTION
 9129a733a21f780d50b1c3bb85da0047 *NAMESPACE
 98a77d0235bb074f09aa7675358b8650 *R/BTC.R
 b8083617bec9ef2a20bf2fb31d1f50cb *R/BTY.R
@@ -23,16 +23,16 @@ ae5724baa7c3661621ed0018287fc6ca *R/hexbinplot.R
 acf4489ea175f01eb1659a420183e155 *R/lattice.R
 887f080dcb908bb6b6491acb52cddc68 *R/smoothHexbin.R
 53e586900ba0c452c12ec7aed3d20295 *TODO
-86660c65a2c4c5be2e5aee0dba63e29c *build/vignette.rds
+a08ac6eda08bcc5791debab3b3a9c716 *build/vignette.rds
 cfa9343134507d8eaf7386167ea1243d *data/NHANES.rda
 e857b573460b9eba00bdb571dfccfb23 *inst/doc/hexagon_binning.R
 0f5af19e815f37b968733e524435daee *inst/doc/hexagon_binning.Rnw
-d2c699c9b24cd6cc08bfa9cffc97bbbe *inst/doc/hexagon_binning.pdf
+59bccfec0efeb5d068f0005854ce6f2d *inst/doc/hexagon_binning.pdf
 3b3cb098160c79abc4d739397d315ff3 *man/NHANES.Rd
 bfc5169b22c653bb5912e9c3e92f3207 *man/colramp.Rd
 94a1639600897389f489b6b836362d82 *man/erode.hexbin.Rd
 47a11326b5056014da626fe8c3c5b8e8 *man/getHMedian.Rd
-651ab732e881463b6516824c162e35ac *man/gplot.hexbin.Rd
+af748a6a41f4a7c7cb0265b75f645d06 *man/gplot.hexbin.Rd
 4f14ff188dcc89ced1434511b0da5dc0 *man/grid.hexagons.Rd
 6e12f30832b4d71515a91bb8c448049d *man/grid.hexlegend.Rd
 5f2695c8af33d84b154a61e3463859e9 *man/hboxplot.Rd
