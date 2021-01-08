@@ -1,5 +1,5 @@
 b8c6e7f6b0230cdf61f0976d387c7a44 *ChangeLog
-8fc9eaa3bc6bdaeee7a251d78fb4d866 *DESCRIPTION
+a06cfbbc71f9d054145d069f167410ce *DESCRIPTION
 9129a733a21f780d50b1c3bb85da0047 *NAMESPACE
 98a77d0235bb074f09aa7675358b8650 *R/BTC.R
 b8083617bec9ef2a20bf2fb31d1f50cb *R/BTY.R
@@ -12,8 +12,8 @@ c25363a22b3f824d1f25997179b74434 *R/RB.R
 cd88d10aa75a6666b296efff0ac1f355 *R/grid.hexlegend.R
 503b110bf985d5c12a0d514c333dc81e *R/hbox.R
 ad4a901fb8fc48deb4f76ad3d797ecd9 *R/hdiffplot.R
-d53fcb4dabb71c0154e881648c6b13da *R/hexPlotMA.R
-0001d85574371fa9a3c90af1672987fa *R/hexViewport.R
+598977d1977192382b97ff947dbe2d45 *R/hexPlotMA.R
+6c606d9e7d4cb2eb92eb985b922086ba *R/hexViewport.R
 7a92115dc09afb29331421e3c4eeddcf *R/hexbin.s4.R
 5d66d35fa92d45957684ee3375513e28 *R/hexbinList.R
 ae5724baa7c3661621ed0018287fc6ca *R/hexbinplot.R
@@ -23,11 +23,11 @@ ae5724baa7c3661621ed0018287fc6ca *R/hexbinplot.R
 acf4489ea175f01eb1659a420183e155 *R/lattice.R
 887f080dcb908bb6b6491acb52cddc68 *R/smoothHexbin.R
 53e586900ba0c452c12ec7aed3d20295 *TODO
-a08ac6eda08bcc5791debab3b3a9c716 *build/vignette.rds
+df805907fa76081e53fad956edb86363 *build/vignette.rds
 cfa9343134507d8eaf7386167ea1243d *data/NHANES.rda
 e857b573460b9eba00bdb571dfccfb23 *inst/doc/hexagon_binning.R
 0f5af19e815f37b968733e524435daee *inst/doc/hexagon_binning.Rnw
-59bccfec0efeb5d068f0005854ce6f2d *inst/doc/hexagon_binning.pdf
+e5c255b1fd878236f31adc04abe88f6f *inst/doc/hexagon_binning.pdf
 3b3cb098160c79abc4d739397d315ff3 *man/NHANES.Rd
 bfc5169b22c653bb5912e9c3e92f3207 *man/colramp.Rd
 94a1639600897389f489b6b836362d82 *man/erode.hexbin.Rd
@@ -41,7 +41,7 @@ eb4f91c7c9c4482122d7c9ee209e93b6 *man/hcell2xy.Rd
 29e7649124c53711586904d9c556f53e *man/hdiffplot.Rd
 f49d784dfab4e373b90f6399c511235f *man/hexGraphPaper.Rd
 cbc932856dc584b571a425fe4b7ec414 *man/hexList.Rd
-e674cd78f6a724d5613ddc81c6983b10 *man/hexMA.loess.Rd
+61f104906bbaf5499386d589c769aa5e *man/hexMA.loess.Rd
 15c9da95418b954cc0feeec69eff71cb *man/hexTapply.Rd
 18c065f4f0c331f17604d467cf00b305 *man/hexVP-class.Rd
 9c7707d15c10f959d35a0714dc65b667 *man/hexVP.abline.Rd
